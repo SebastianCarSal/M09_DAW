@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Pagina de video</title>
+</head>
+<body>
+    <header>
+        <h1>Benvinguts a Barcelona</h1>
+    </header>
+    <main>
+        <video controls>
+            <source src="media/PROJ.mp4" type="video/mp4">
+        </video> 
+        <div class="cards-container">
+            <div class="card" onclick="openModal('modal1')">
+                <center><h1 class="card-title">Descripcion del Proyecto</h1></center>
+            </div>
+            <div class="card" onclick="openModal('modal2')">
+                <center><h1 class="card-title">Aspectos Técnicos</h1></center>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Jhester y Sebastian. Todos los derechos reservados.</p>
+    </footer>
+    <!-- Modal Descripcion del proyecto -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Descripcion del Proyecto</h2>
+            <p>Nuestro video del proyecto, trata sobre los monumentos y las contrucciones mas especiales y espectaculares de 
+                nuestra preciosa Barcelona. Mostramos desde la Sagrada Familia hasta el Parc Guell. Mostrando porque las personas
+                deberian visitar Barcelona almenos una vez en su vida.
+            </p>
+        </div>
+    </div>
+
+    <!-- Modal Aspectos tecnicos -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Aspectos Técnicos</h2>
+            <p><ul>TRANSITIONS </ul><li>01:15-Dissolve Transition </li> <li>02:10-Bar Horizontal Transition </li> <li>03:07-Barn Door Diagonal </li>
+            <li>04:32-Barn Door Horizontal </li><li>07:15-Barn Door Vertical </li><li>08:15-Barn V Up</li>
+            <ul>TEXTS</ul><li>00:00-0:11 | Sagrada Familia</li><li>01:17-1:26 | La Pedrera-Casa Mila </li><li>02:14-2:22 | Poble Espanyol</li>
+            <li>03:10-3:17 | Arc de Triomf</li><li>04:35-4:44 | Barcelona- Eixample District</li><li>07:19-7:29 | El Carmel </li>
+            <li>08:17-8:25 | Casa Batlló</li>
+            <ul>SOUNDS</ul><li>00:00-02:45 | Maluma-Coco Loco</li><li>02:45-05:57 | Karol G-Si antes te hubiera conocido </li><li>05:57-09:15 | Pista-Eso que tú Me Das</li></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
